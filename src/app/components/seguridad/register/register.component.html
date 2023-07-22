@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="recovery">
+    <h3>Asignar Rol a Usuarios</h3>
+    <form [formGroup]="formularioRegister" action="">
+      <div class="form-group">
+        <label for="user">Usuario:</label>
+        <input formControlName="user" type="text" id="user" class="form-control" required placeholder="Digite su usuario">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="nombreCompleto">Nombre Completo:</label>
+        <input formControlName="nombreCompleto" type="text" id="nombreCompleto" class="form-control" required placeholder="Digite el nombre completo">
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="idSelectSede">Seleccione Sede/Sucursal:</label>
+        <select class="form-control" id="idSelectSede">
+          <option value="" disabled selected>Seleccione Sede/Sucursal...</option>
+          <option value="1">S01</option>
+          <option value="2">S02</option>
+          <option value="3">S03</option>
+          <option value="4">S04</option>
+          <option value="5">S05</option>
+          <option value="6">S06</option>
+          <option value="7">S07</option>
+          <option value="8">S08</option>
+          <option value="9">S09</option>
+          <option value="10">S10</option>
+          <option value="11">S11</option>
+          <option value="12">S12</option>
+          <option value="13">S13</option>
+          <option value="14">S14</option>
+          <option value="15">S15</option>
+          <option value="16">S16</option>
+          <option value="17">S17</option>
+          <option value="18">S18</option>
+          <option value="19">S19</option>
+          <option value="20">S20</option>
+          <option value="21">S21</option>
+          <option value="23">S23</option>
+          <option value="24">S24</option>
+          <option value="25">S25</option>
+          <option value="26">S26</option>
+          <option value="27">S27</option>
+          <option value="28">S28</option>
+          <option value="29">S29</option>
+          <option value="30">S30</option>
+          <option value="32">S32</option>
+        </select>
+      </div>
+      <br>
+      <div class="form-group">
+        <label for="idSelectRole">Seleccione Rol :</label>
+        <select class="form-control" id="idSelectRole">
+          <option value="" disabled selected>Seleccione Rol para el usuario...</option>
+          <option value="1">Administrador</option>
+          <option value="3">AuxAdministrador</option>
+          <option value="2">Usuario</option>
+        </select>
+      </div>
+      <div class="row" style="margin-top: 15px;">
+        <div class="col">
+          <button  (click)="CrearUsuario()" class="btn btn-primary" type="submit" name="action">Crear Usuario</button>
+        </div>
+        <div class="col">
+          <button routerLink="../admonUser" class="btn btn-secondary" type="submit" name="action">Ir a Administración de Usuarios</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
